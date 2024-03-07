@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">简记</string>
+    <string name="title">标题</string>
+    <string name="add_notes">正文:</string>
+    <string name="content">内容</string>
+    <string name="date">日期</string>
+    <string name="search">搜索</string>
+    <string name="pin_unpin">标定/取消标定</string>
+    <string name="delete">删除</string>
+    <string name="toAdd">请添加笔记！</string>
+    <string name="deleted">笔记已删除。</string>
+    <string name="cancel">取消</string>
+    <string name="sure">确定要删除笔记吗?</string>
+    <string name="info">设置</string>
+    <string name="About">基于Room，简记，简单记录生活。\n试试左右滑动和长按。</string>
+    <string name="create">"创建于: "</string>
+    <string name="toast">笔记已标定。</string>
+    <string name="confirm">确定</string>
+    <string name="filter">筛选</string>
+    <string name="save">保存</string>
+    <string name="alarm">提醒</string>
+    <string name="note">笔记</string>
+    <string name="add">创建新笔记</string>
+    <string name="login">登录</string>
+    <string name="usePassword">使用系统锁屏密码</string>
+    <string name="noPassword">不使用密码</string>
+    <string name="shareApp">分享此应用</string>
+    <string name="rate">给应用打分</string>
+    <string name="deleteAll">删除所有笔记</string>
+    <string name="shareContent">快从谷歌商店下载简记吧:\nhttps://play.google.com/store/apps/details?id=com.yangdai.notesapp</string>
+</resources>
