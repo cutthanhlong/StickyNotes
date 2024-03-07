@@ -2,18 +2,6 @@ package com.example.notesapp;
 
 import static com.example.notesapp.FileUtils.deleteSingleFile;
 
-import androidx.activity.result.ActivityResultLauncher;
-import androidx.activity.result.contract.ActivityResultContracts;
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.PopupMenu;
-import androidx.appcompat.widget.SearchView;
-import androidx.cardview.widget.CardView;
-import androidx.recyclerview.widget.ItemTouchHelper;
-import androidx.recyclerview.widget.RecyclerView;
-import androidx.recyclerview.widget.StaggeredGridLayoutManager;
-import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
-
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Intent;
@@ -25,6 +13,18 @@ import android.os.Looper;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
+
+import androidx.activity.result.ActivityResultLauncher;
+import androidx.activity.result.contract.ActivityResultContracts;
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.PopupMenu;
+import androidx.appcompat.widget.SearchView;
+import androidx.cardview.widget.CardView;
+import androidx.recyclerview.widget.ItemTouchHelper;
+import androidx.recyclerview.widget.RecyclerView;
+import androidx.recyclerview.widget.StaggeredGridLayoutManager;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import com.example.notesapp.Adapters.NotesListAdapter;
 import com.example.notesapp.DataBase.RoomDB;
@@ -45,7 +45,7 @@ import java.util.stream.Collectors;
 public class MainActivity extends AppCompatActivity implements PopupMenu.OnMenuItemClickListener {
 
     ActivityResultLauncher<Intent> intentActivityResultLauncher1, intentActivityResultLauncher2,
-    intentActivityResultLauncher;
+            intentActivityResultLauncher;
     RecyclerView recyclerView;
     NotesListAdapter notesListAdapter;
     SwipeRefreshLayout swipeRefreshLayout;
@@ -218,9 +218,9 @@ public class MainActivity extends AppCompatActivity implements PopupMenu.OnMenuI
         public void onSwiped(@NonNull RecyclerView.ViewHolder viewHolder, int direction) {
             int position = viewHolder.getAdapterPosition();
             new MaterialAlertDialogBuilder(MainActivity.this)
-                    .setTitle(getString(R.string.delete))//标题
-                    .setMessage(getString(R.string.sure))//内容
-                    .setIcon(R.mipmap.ic_launcher)//图标
+                    .setTitle(getString(R.string.delete))
+                    .setMessage(getString(R.string.sure))
+                    .setIcon(R.drawable.logo_app)
                     .setCancelable(false)
                     .setNegativeButton(getString(R.string.cancel), (dialogInterface, i) -> notesListAdapter.notifyItemChanged(position))
                     .setPositiveButton(getString(R.string.delete), (dialog, which) -> {
@@ -314,9 +314,9 @@ public class MainActivity extends AppCompatActivity implements PopupMenu.OnMenuI
                 Toast.makeText(MainActivity.this, getString(R.string.toast), Toast.LENGTH_SHORT).show();
             } else {
                 new MaterialAlertDialogBuilder(this)
-                        .setTitle(getString(R.string.delete))//标题
-                        .setMessage(getString(R.string.sure))//内容
-                        .setIcon(R.mipmap.ic_launcher)//图标
+                        .setTitle(getString(R.string.delete))
+                        .setMessage(getString(R.string.sure))
+                        .setIcon(R.drawable.logo_app)
                         .setCancelable(false)
                         .setNegativeButton(getString(R.string.cancel), (dialogInterface, i) -> {
 
