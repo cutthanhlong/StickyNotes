@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="title">Tiêu đề</string>
+    <string name="add_notes">Nội dung:</string>
+    <string name="content">Nội dung</string>
+    <string name="date">Ngày</string>
+    <string name="search">Tìm kiếm</string>
+    <string name="pin_unpin">Ghim/Bỏ ghim</string>
+    <string name="delete">Xóa bỏ</string>
+    <string name="toAdd">Vui lòng thêm một số ghi chú!</string>
+    <string name="deleted">Ghi chú đã bị xóa.</string>
+    <string name="cancel">Hủy bỏ</string>
+    <string name="sure">Bạn có chắc chắn muốn xóa ghi chú không?</string>
+    <string name="info">Cài đặt</string>
+    <string name="create">"Ngày thành lập: "</string>
+    <string name="toast">Ghi chú này đã được ghim.</string>
+    <string name="confirm">Xác nhận</string>
+    <string name="filter">Lọc</string>
+    <string name="save">Cứu</string>
+    <string name="alarm">Nhắc lại</string>
+    <string name="note">Ghi chú</string>
+    <string name="add">Tạo ghi chú mới</string>
+    <string name="login">Đăng nhập</string>
+    <string name="usePassword">Sử dụng mật khẩu màn hình khóa hệ thống</string>
+    <string name="shareApp">Chia sẻ ứng dụng này</string>
+    <string name="rate">Đánh giá ứng dụng này</string>
+    <string name="deleteAll">Xóa tất cả ghi chú</string>
+</resources>
